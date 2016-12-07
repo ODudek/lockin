@@ -36,9 +36,9 @@
             // 
             this.haslo.Location = new System.Drawing.Point(36, 46);
             this.haslo.Name = "haslo";
-            this.haslo.Size = new System.Drawing.Size(75, 23);
+            this.haslo.Size = new System.Drawing.Size(97, 23);
             this.haslo.TabIndex = 0;
-            this.haslo.Text = "Załóż hasło";
+            this.haslo.Text = "Lock folder";
             this.haslo.UseVisualStyleBackColor = true;
             this.haslo.Click += new System.EventHandler(this.haslo_Click);
             // 
@@ -46,9 +46,9 @@
             // 
             this.odblokuj.Location = new System.Drawing.Point(164, 46);
             this.odblokuj.Name = "odblokuj";
-            this.odblokuj.Size = new System.Drawing.Size(75, 23);
+            this.odblokuj.Size = new System.Drawing.Size(92, 23);
             this.odblokuj.TabIndex = 1;
-            this.odblokuj.Text = "Odblokuj";
+            this.odblokuj.Text = "Unlock folder";
             this.odblokuj.UseVisualStyleBackColor = true;
             this.odblokuj.Click += new System.EventHandler(this.odblokuj_Click);
             // 
@@ -63,7 +63,7 @@
             this.MinimumSize = new System.Drawing.Size(300, 150);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Załóż hasło";
+            this.Text = "Lock folder";
             this.ResumeLayout(false);
 
         }

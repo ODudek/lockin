@@ -38,47 +38,49 @@
             // password1
             // 
             this.password1.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-            this.password1.Location = new System.Drawing.Point(99, 26);
+            this.password1.Location = new System.Drawing.Point(110, 26);
             this.password1.MaxLength = 20;
             this.password1.Name = "password1";
             this.password1.Size = new System.Drawing.Size(150, 20);
             this.password1.TabIndex = 0;
             this.password1.UseSystemPasswordChar = true;
+            this.password1.TextChanged += new System.EventHandler(this.password1_TextChanged);
             // 
             // password2
             // 
-            this.password2.Location = new System.Drawing.Point(99, 64);
+            this.password2.Location = new System.Drawing.Point(110, 64);
             this.password2.MaxLength = 20;
             this.password2.Name = "password2";
             this.password2.Size = new System.Drawing.Size(150, 20);
             this.password2.TabIndex = 1;
             this.password2.UseSystemPasswordChar = true;
+            this.password2.TextChanged += new System.EventHandler(this.password2_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 29);
+            this.label1.Location = new System.Drawing.Point(26, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.Size = new System.Drawing.Size(56, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Podaj hasło:";
+            this.label1.Text = "Password:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 67);
+            this.label2.Location = new System.Drawing.Point(11, 67);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 13);
+            this.label2.Size = new System.Drawing.Size(93, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Powtórz hasło:";
+            this.label2.Text = "Repeat password:";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(179, 114);
+            this.button1.Location = new System.Drawing.Point(177, 114);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(95, 23);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Załóż hasło";
+            this.button1.Text = "Create password";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -96,7 +98,7 @@
             this.MinimumSize = new System.Drawing.Size(300, 200);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Załóż hasło";
+            this.Text = "Lock folder";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

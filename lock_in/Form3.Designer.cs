@@ -41,7 +41,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(92, 23);
             this.button1.TabIndex = 9;
-            this.button1.Text = "Odblokuj folder";
+            this.button1.Text = "Unlock folder";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -50,22 +50,22 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(14, 66);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 13);
+            this.label2.Size = new System.Drawing.Size(93, 13);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Powtórz hasło:";
+            this.label2.Text = "Repeat password:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(27, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.Size = new System.Drawing.Size(56, 13);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Podaj hasło:";
+            this.label1.Text = "Password:";
             // 
             // password2
             // 
-            this.password2.Location = new System.Drawing.Point(98, 63);
+            this.password2.Location = new System.Drawing.Point(113, 63);
             this.password2.MaxLength = 20;
             this.password2.Name = "password2";
             this.password2.Size = new System.Drawing.Size(150, 20);
@@ -75,7 +75,7 @@
             // password1
             // 
             this.password1.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-            this.password1.Location = new System.Drawing.Point(98, 25);
+            this.password1.Location = new System.Drawing.Point(113, 25);
             this.password1.MaxLength = 20;
             this.password1.Name = "password1";
             this.password1.Size = new System.Drawing.Size(150, 20);
@@ -95,7 +95,7 @@
             this.MaximumSize = new System.Drawing.Size(300, 200);
             this.MinimumSize = new System.Drawing.Size(300, 200);
             this.Name = "Form3";
-            this.Text = "Odblokuj folder";
+            this.Text = "Unlock folder";
             this.ResumeLayout(false);
             this.PerformLayout();
 

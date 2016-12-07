@@ -30,7 +30,6 @@ namespace lock_in
         private void button1_Click(object sender, EventArgs e)
         {
             string sciezka2 = lock_in.Program.sciezka;
-            //string sciezka = @"C:\Users\aleksander\Desktop\bla";          
             if (password1.Text != string.Empty || password2.Text != string.Empty)
             {
                 if (password1.Text == password2.Text)
@@ -50,23 +49,33 @@ namespace lock_in
                         myDirectorySecurity.AddAccessRule(new FileSystemAccessRule(User, FileSystemRights.Read, AccessControlType.Deny));
                         myDirectoryInfo.SetAccessControl(myDirectorySecurity);
                     }
-                    MessageBox.Show("Hasło zostało zalożone");
+                    MessageBox.Show("Folder is locked");
                     this.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Hasla sa niezgodne");
+                    MessageBox.Show("Password isn't correct");
                 }
             }
             else
             {
-                MessageBox.Show("Musisz wpisac haslo");
+                MessageBox.Show("You need to insert password");
             }
 
 
         }
 
         private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void password2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void password1_TextChanged(object sender, EventArgs e)
         {
 
         }

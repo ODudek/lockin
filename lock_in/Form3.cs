@@ -30,7 +30,6 @@ namespace lock_in
         private void button1_Click(object sender, EventArgs e)
         {
             string sciezka2 = lock_in.Program.sciezka;
-            //string sciezka = @"C:\Users\aleksander\Desktop\bla";
             if (password1.Text != string.Empty || password2.Text != string.Empty)
             {
                 if (password1.Text == password2.Text)
@@ -53,22 +52,22 @@ namespace lock_in
                         RegistryKey key = Registry.CurrentUser.CreateSubKey(@"Software\lock_in\password");
                         key.DeleteValue(sciezka2);
                         key.Close();
-                        MessageBox.Show("Hasło zostało usunięte");
+                        MessageBox.Show("Folder is unlocked");
                         this.Close();
                     }
                     else
                     {
-                        MessageBox.Show("Błędne hasło");
+                        MessageBox.Show("Password isn't correct");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Hasła są niezgodne");
+                    MessageBox.Show("Password isn't correct");
                 }
             }
             else
             {
-                MessageBox.Show("Musisz wpisać hasło");
+                MessageBox.Show("You need to insert password");
             }
         }
     }

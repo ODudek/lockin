@@ -25,12 +25,12 @@ namespace lock_in
         public Form1()
         {
             string path = Path.GetDirectoryName(Application.ExecutablePath) + "\\lock_in.exe %1";
-            var key = Registry.ClassesRoot.OpenSubKey(@"Directory\shell\Załóż hasło");
+            var key = Registry.ClassesRoot.OpenSubKey(@"Directory\shell\Lock folder");
             if (key == null)
             {
                 RegistryKey key1;
-                key1 = Registry.ClassesRoot.CreateSubKey(@"Directory\shell\Załóż hasło");
-                key1 = Registry.ClassesRoot.CreateSubKey(@"Directory\shell\Załóż hasło\command");
+                key1 = Registry.ClassesRoot.CreateSubKey(@"Directory\shell\Lock folder");
+                key1 = Registry.ClassesRoot.CreateSubKey(@"Directory\shell\Lock folder\command");
                 key1.SetValue(string.Empty, Assembly.GetExecutingAssembly().Location + " %1");
             }
             var key3 = Registry.CurrentUser.OpenSubKey(@"Software\lock_in");
@@ -57,7 +57,7 @@ namespace lock_in
                 }
                 else
                 {
-                    MessageBox.Show("Folder posiada juz haslo");
+                    MessageBox.Show("Folder is already locked");
                 }
             }
         }
@@ -70,7 +70,7 @@ namespace lock_in
             {
                 if (open.GetValue(sciezka2) == null)
                 {
-                    MessageBox.Show("Folder nie posiada hasła");
+                    MessageBox.Show("Folder need to be locked");
                 }
                 else
                 {
